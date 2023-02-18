@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+
+        }
+
+        /* Layout mobile *****************/
+
+
+        .cabecalho {
+            width: 100%;
+            padding: 30px;
+            background-color: rgb(0, 65, 73);
+            color: white;
+        }
+
+        .conteudo {
+            width: 100%;
+            padding: 30px;
+            background-color: rgb(0, 101, 114);
+            color: white;
+        }
+
+        .login {
+            width: 100%;
+            padding: 30px;
+            background-color: rgb(1, 155, 175);
+            color: white;
+        }
+
+        .destaques {
+            width: 100%;
+            padding: 30px;
+            background-color: rgb(3, 209, 236);
+            color: white;
+        }
+
+        .noticias {
+            width: 100%;
+            padding: 30px;
+            background-color: rgb(88, 236, 255 );
+            color: rgb(0, 103, 129);
+        }
+
+        .artigos {
+            width: 100%;
+            padding: 30px;
+            background-color: rgb(142, 242, 255);
+            color: rgb(0, 111, 146);
+        }
+
+        .rodape {
+            width: 100%;
+            padding: 30px;
+            background-color: rgb(0, 65, 73);
+            color: white;
+        }
+
+        /*  layout tabletes ***********/
+        @media (min-width: 768px) {
+           .boxes {
+               display: flex;
+               flex-wrap: wrap;
+           }
+
+           .login {
+              width: 50%;
+              padding-top: 50px;
+              padding-bottom: 50px;
+           }
+
+           .destaques {
+              width: 50%;
+              padding-top: 50px;
+              padding-bottom: 50px;
+           }
+
+           .noticias {
+              width: 50%;
+              padding-top: 50px;
+              padding-bottom: 50px;
+           }
+
+           .artigos {
+              width:50%;
+              padding-top: 50px;
+              padding-bottom: 50px;
+           }
+        }
+
+        /*  Layout para Desktop *****/
+
+        @media (min-width: 992px) {
+            .login {
+                width: 33.33%;
+            }
+             
+            .destaques {
+                width: 33.33%;
+            }
+
+            .noticias {
+                width: 33.34%;
+            }
+
+            .artigos {
+                width: 100%;
+            }
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h3>Cabeçalho</h3>
+    </header>
+
+    <main class="corpo">
+       <article class="conteudo">
+          <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis pariatur nulla quisquam iste tempore. Quia itaque voluptatibus, nesciunt quasi eius amet vitae ex sapiente dolorum accusamus tempore, et laborum doloremque!
+          </p>
+
+       </article>
+
+       <div class="boxes">
+           <section class="login">
+                 <h3>Login</h3>
+           </section>
+
+           <section class="destaques">
+                 <h3>Destaques</h3>
+           </section>
+
+           <section class="noticias">
+                 <h3>Noticias</h3>
+           </section>
+
+           <section class="artigos">
+                 <h3>Artigos</h3>
+          </section>
+       </div>
+
+    </main>
+     
+    <footer class="rodape">
+        <h3>Rodapé</h3>
+    </footer>
+
+</body>
+</html>
